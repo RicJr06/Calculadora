@@ -1,9 +1,8 @@
 function Calcular(info){
 
-    var n1 = parseInt(document.formcalc.num1.value);
-    var n2 = parseInt(document.formcalc.num1.value);
+    var n1 = parseInt(document.formcalc.n1.value);
+    var n2 = parseInt(document.formcalc.n2.value);
     var res = 0;
-    var Calcular;
 
     if (info == 1){
         res = n1+n2;
@@ -18,5 +17,5 @@ function Calcular(info){
         res = n1/n2;
     }
 
-    document.getElementByName('res').innerHTML=Calcular(info);
+    document.formcalc.resultado.value = res;
 }
